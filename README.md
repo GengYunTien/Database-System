@@ -17,6 +17,6 @@ CREATE TABLE mlb (
     player VARCHAR(50) NOT NULL
 );
 ```
-2. Frontend was created to let user enter the data.
-![images]()
+2. Frontend was created to let user enter the data.  
+![images](https://github.com/GengYunTien/Database-System/blob/main/hw1/images/frontend.png)
 ## Final project
