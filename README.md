@@ -22,6 +22,6 @@ CREATE TABLE mlb (
 ```bash
 python app.py
 ```
-![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw1_example.png)
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw1_web.png)
 4. SQL database synchronization update in progress.
 ## Final project
