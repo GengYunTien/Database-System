@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Team Support Intention</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="background-container">
+        <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div class="form-container text-center bg-light p-4">
+                <h1 class="mb-4">MLB Team Support Intention</h1>
+                <form action="/add" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="team" class="form-label">Team</label>
+                        <input type="text" class="form-control" id="team" name="team" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="player" class="form-label">Player</label>
+                        <input type="text" class="form-control" id="player" name="player" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
