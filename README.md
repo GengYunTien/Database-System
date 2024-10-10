@@ -17,6 +17,9 @@ CREATE TABLE mlb (
     player VARCHAR(50) NOT NULL
 );
 ```
-2. Frontend was created to let user enter the data.  
+2. `index.html`and`styles.css`build the frontend 
+2. Execute `app.py` 
+3. Frontend was created to let user enter the data.  
 ![images](https://github.com/GengYunTien/Database-System/blob/main/hw1/images/frontend.png)
+3. 
 ## Final project
