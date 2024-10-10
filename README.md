@@ -24,5 +24,4 @@ python app.py
 ```
 ![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw1.png)
 4. SQL database synchronization update in progress.
-1[images]()
 ## Final project
