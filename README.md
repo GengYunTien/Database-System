@@ -1,7 +1,7 @@
 # Database-System
-Name: 田庚昀
-Student ID: R11945043
-Department and Grade: 臺大生醫電資所碩三
+Name: 田庚昀  
+Student ID: R11945043  
+Department and Grade: 臺大生醫電資所碩三  
 ## Assignment
 ### HW1 Flask + SQL
 Create a table in SQL, and after entering data in the frontend, the input data can be recorded simultaneously in the table within the backend database.  
