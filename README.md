@@ -6,7 +6,7 @@ Department and Grade: 臺大生醫電資所碩三
 ### HW1 Flask + SQL
 Create a table in SQL, and after entering data in the frontend, the input data can be recorded simultaneously in the table within the backend database.  
 [HW1 demo video](https://www.youtube.com/watch?v=dMZsB5H3GRw)  
-1. I want to record which MLB team and player the registrants support, so I first created a table in test database.
+1. I want to record which MLB team and player the registrants support, so I first created a table in the SQL database.
 ```sql
 USE test;
 
@@ -17,9 +17,12 @@ CREATE TABLE mlb (
     player VARCHAR(50) NOT NULL
 );
 ```
-2. `index.html`and`styles.css`build the frontend 
-2. Execute `app.py` 
-3. Frontend was created to let user enter the data.  
+2. `index.html` and `styles.css` build the frontend.
+3. Execute `app.py` to handle the data submitted from the frontend and save it to the SQL database.
+```bash
+python app.py
+```
+* ``
 ![images](https://github.com/GengYunTien/Database-System/blob/main/hw1/images/frontend.png)
 3. 
 ## Final project
