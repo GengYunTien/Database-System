@@ -22,6 +22,6 @@ CREATE TABLE mlb (
 ```bash
 python app.py
 ```
-![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw1_example.png)
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw1.png)
 4. 
 ## Final project
