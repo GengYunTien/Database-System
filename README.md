@@ -22,7 +22,7 @@ CREATE TABLE mlb (
 ```bash
 python app.py
 ```
-* ``
-![images](https://github.com/GengYunTien/Database-System/blob/main/hw1/images/frontend.png)
-3. 
+* `http://127.0.0.1:5000`
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw1_example.png)
+4. 
 ## Final project
