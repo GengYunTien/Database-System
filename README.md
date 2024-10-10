@@ -18,11 +18,10 @@ CREATE TABLE mlb (
 );
 ```
 2. `index.html` and `styles.css` build the frontend.
-3. Execute `app.py` to handle the data submitted from the frontend and save it to the SQL database.
+3. Execute `app.py` to handle the data submitted from the frontend and save it to the SQL database.(`http://127.0.0.1:5000`)
 ```bash
 python app.py
 ```
-* `http://127.0.0.1:5000`
 ![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw1_example.png)
 4. 
 ## Final project
