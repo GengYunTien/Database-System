@@ -24,4 +24,7 @@ python app.py
 ```
 ![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw1_web.png)
 4. SQL database synchronization update in progress.
+### HW2 ER moddel + CRUD + Flask
+Design an ER model for three entities. Perform CRUD operations on three tables and include at least one join in the final SELECT statement.
+
 ## Final project
