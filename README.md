@@ -18,7 +18,7 @@ CREATE TABLE mlb (
 );
 ```
 2. `index.html` and `styles.css` build the frontend.
-3. Execute `app.py` to handle the data submitted from the frontend and save it to the SQL database.(`http://127.0.0.1:5000`)
+3. Execute `app.py` to handle the data submitted from the frontend and save it to the SQL database.  
 ```bash
 python app.py
 ```
@@ -27,6 +27,17 @@ python app.py
 ### HW2 ER model + CRUD + Flask
 Design an ER model for three entities. Perform CRUD operations on three tables and include at least one join in the final SELECT statement.  
 [**HW2 demo video**](https://www.youtube.com/watch?v=dMZsB5H3GRw)  
-1. Design a database and its ER diagram. This database includes `Player`, `Team` and `Batting statistics` tables.  
-![images](https://github.com/GengYunTien/Database-System/blob/main/images/ERD.png)
+1. Design a `Baseball` database and its ER diagram. This database includes `Player`, `Team` and `Batting statistics` tables for building baseball player management system.  
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/ERD.png)  
+2. `create.py`, `read.py`, `update.py` and `delete.py` for CRUD operation.  
+3. `join.py` for SQL JOIN and SELECT queries.  
+4. Execute `app.py` to handle the CRUD, JOIN and SELECT queries.
+```bash
+python app.py
+```
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw2_web_1.png)  
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw2_web_2.png)  
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw2_web_3.png)  
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw2_web_4.png)  
+5. SQL database synchronization update in progress.
 ## Final project
