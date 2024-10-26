@@ -1,4 +1,3 @@
-# create.py
 from flask import Blueprint, request, redirect, url_for
 from models import db, Player, BattingStatistics
 
