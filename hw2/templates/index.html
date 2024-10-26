@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball Player Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="text-center mb-4">
+            <h1>Baseball Player Management</h1>
+        </div>
+        <!-- Player block -->
+        <div class="mb-5">
+            <h2>Player</h2>
+            <!-- create -->
+            <form action="/add_player" method="POST" class="mb-3">
+                <input type="number" name="player_ID" placeholder="Player ID" required>
+                <input type="text" name="player_name" placeholder="Name" required>
+                <input type="date" name="birth_date" placeholder="Birth Date">
+                <input type="text" name="birth_place" placeholder="Birth Place">
+                <input type="number" name="team_ID" placeholder="Team ID" required>
+                <input type="number" name="stats_ID" placeholder="Stats ID" required>
+                <button type="submit" class="btn btn-success">Create</button>
+            </form>
+            <form action="/delete_player" method="POST">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Player ID</th>
+                            <th>Name</th>
+                            <th>Birth date</th>
+                            <th>Birth place</th>
+                            <th>Team ID</th> 
+                            <th>Stats ID</th>
+                            <th class="player-operation-column">Operation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for player in players %}
+                        <tr>
+                            <td><input type="checkbox" name="delete_player" value="{{ player.ID }}"></td>
+                            <td>{{ player.player_ID }}</td>
+                            <td>{{ player.player_name }}</td>
+                            <td>{{ player.birth_date }}</td>
+                            <td>{{ player.birth_place }}</td>
+                            <td>{{ player.team_ID }}</td> 
+                            <td>{{ player.stats_ID }}</td>
+                            <td>
+                                <!-- Update -->
+                                <form action="/update_player/{{ player.ID }}" method="POST" class="d-inline">
+                                    <input type="text" name="player_name" value="{{ player.player_name }}" required>
+                                    <input type="date" name="birth_date" value="{{ player.birth_date }}">
+                                    <input type="text" name="birth_place" value="{{ player.birth_place }}">
+                                    <input type="number" name="team_ID" value="{{ player.team_ID }}">
+                                    <input type="number" name="stats_ID" value="{{ player.stats_ID }}">
+                                    <button type="submit" class="btn btn-warning">Update</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+
+        <!-- BattingStatistics block -->
+        <div class="mb-5">
+            <h2>Batting Statistics</h2>
+            <!-- Create -->
+            <form action="/add_stat" method="POST" class="mb-3">
+                <input type="text" name="AVG" placeholder="AVG" required>
+                <input type="text" name="Hits" placeholder="Hits" required>
+                <input type="text" name="HR" placeholder="HR" required>
+                <input type="text" name="RBI" placeholder="RBI" required>
+                <button type="submit" class="btn btn-success">Create</button>
+            </form>
+            <form action="/delete_stat" method="POST">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Stats ID</th>
+                            <th>AVG</th>
+                            <th>Hits</th>
+                            <th>HR</th>
+                            <th>RBI</th>
+                            <th class="battingstatistics-operation-column">Operation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for stat in stats %}
+                        <tr>
+                            <td><input type="checkbox" name="delete_stat" value="{{ stat.stats_ID }}"></td>
+                            <td>{{ stat.stats_ID }}</td>
+                            <td>{{ stat.AVG }}</td>
+                            <td>{{ stat.Hits }}</td>
+                            <td>{{ stat.HR }}</td>
+                            <td>{{ stat.RBI }}</td>
+                            <td>
+                                <!-- Update -->
+                                <form action="/update_stat/{{ stat.stats_ID }}" method="POST" class="d-inline">
+                                    <input type="text" name="AVG" value="{{ stat.AVG }}" required>
+                                    <input type="text" name="Hits" value="{{ stat.Hits }}" required>
+                                    <input type="text" name="HR" value="{{ stat.HR }}" required>
+                                    <input type="text" name="RBI" value="{{ stat.RBI }}" required>
+                                    <button type="submit" class="btn btn-warning">Update</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+
+        <!-- Team block -->
+        <div class="mb-5">
+            <h2>Team</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Team ID</th>
+                        <th>Team Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for team in teams %}
+                    <tr>
+                        <td>{{ team.team_ID }}</td>
+                        <td>{{ team.team_name }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Change to Join Data page -->
+        <div class="text-center">
+            <a href="{{ url_for('join.join_data') }}" class="btn btn-primary">Check Join Data</a>
+        </div>
+    </div>
+</body>
+</html>
