@@ -1,4 +1,3 @@
-# join.py
 from flask import Blueprint, render_template
 from sqlalchemy import text
 from models import db
