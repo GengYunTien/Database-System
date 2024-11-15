@@ -41,4 +41,7 @@ python app.py
 ![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw2_web_4.png)  
 5. SQL database synchronization update in progress.
 ### HW3 MongoDB + Flask
+First, use MongoDB Compass to show the content in the database. Then, switch to the front-end web app to demonstrate the create operation. Finally, switch back to MongoDB Compass to display the newly inserted data.  
+[**HW2 demo video**](https://www.youtube.com/watch?v=-epHmxeMLyc)
+
 ## Final project
