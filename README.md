@@ -42,6 +42,8 @@ python app.py
 5. SQL database synchronization update in progress.
 ### HW3 MongoDB + Flask
 First, use MongoDB Compass to show the content in the database. Then, switch to the front-end web app to demonstrate the create operation. Finally, switch back to MongoDB Compass to display the newly inserted data.  
-[**HW2 demo video**](https://www.youtube.com/watch?v=-epHmxeMLyc)
-
+[**HW3 demo video**](https://www.youtube.com/watch?v=-epHmxeMLyc)  
+1. Design a `Baseball` database in MongoDB.
+2. Design the frontend to provide the service that offer the baseball game audience to record their game viewing reflections.
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw3_web_1.png)
 ## Final project
