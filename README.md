@@ -27,7 +27,7 @@ python app.py
 ### HW2 ER model + CRUD + Flask
 Design an ER model for three entities. Perform CRUD operations on three tables and include at least one join in the final SELECT statement.  
 [**HW2 demo video**](https://youtu.be/e3vzn5QgC_8)  
-1. Design a `Baseball` database and its ER diagram. This database includes `Player`, `Team` and `Batting statistics` tables for building baseball player management system.  
+1. Create a `Baseball` database and its ER diagram. This database includes `Player`, `Team` and `Batting statistics` tables for building baseball player management system.  
 ![images](https://github.com/GengYunTien/Database-System/blob/main/images/ERD.png)  
 2. `create.py`, `read.py`, `update.py` and `delete.py` for CRUD operation.  
 3. `join.py` for SQL JOIN and SELECT queries.  
