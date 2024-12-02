@@ -52,7 +52,7 @@ python app.py
 ![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw3_web_1.png)
 4. MongoDB synchronization update in progress.
 ### HW4 MongoDB + CRUD + Flask
-First, use MongoDB Compass to show the content in the database. Then, perform a CRUD operation in the frontend web.
+First, use MongoDB Compass to show the content in the database. Then, perform a CRUD operation in the frontend web.  
 [**HW4 demo video**](https://youtu.be/TOfzC6-55Lk)  
 1. Design a `Baseball` database in MongoDB.
 2. `index.html`, `view.html`, `edit.html` and `styles.css` build the frontend to provide the service that offer the baseball game spectator to record their game viewing reflections.
