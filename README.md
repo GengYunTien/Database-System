@@ -60,5 +60,8 @@ First, use MongoDB Compass to show the content in the database. Then, perform a 
 ```bash
 python app.py
 ```
-
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw4_web_1.png)  
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw4_web_2.png)  
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw4_web_3.png)  
+4. MongoDB synchronization update in progress.
 ## Final project
