@@ -72,3 +72,5 @@ python app.py
 ```bash
 python app.py
 ```
+![images](https://github.com/GengYunTien/Database-System/blob/main/images/final_project_web_1.png)  
+4. MongoDB synchronization update in progress.
