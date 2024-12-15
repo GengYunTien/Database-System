@@ -65,3 +65,10 @@ python app.py
 ![images](https://github.com/GengYunTien/Database-System/blob/main/images/hw4_web_3.png)  
 4. MongoDB synchronization update in progress.
 ## Final project
+[**Final project demo video**](https://youtu.be/TOfzC6-55Lk)  
+1. Design a `Tourist spots` database in MongoDB.
+2. `index.html`, `view.html`, `edit.html` and `styles.css` build the frontend to provide the service that offer the tourists to record their travel experience .
+3. Execute `app.py` to handle the CRUD.
+```bash
+python app.py
+```
